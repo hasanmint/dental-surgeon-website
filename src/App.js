@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import logo from './logo.svg';
 import About from './Pages/About/About';
 import Login from './Pages/Auth/Login/Login';
 import Register from './Pages/Auth/Register/Register';

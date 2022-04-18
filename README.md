@@ -1,6 +1,6 @@
 #Dental Surgeon-Dentist Dr.Jeremy Hill
 
-Live Website URL:  ( https://dental-surgeon-e4a55.firebaseapp.com/).
+Live Website URL:  ( https://dental-surgeon-e4a55.web.app/).
 
 ## Use Project Features 
 * Navbar

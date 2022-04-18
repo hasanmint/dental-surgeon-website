@@ -39,7 +39,7 @@ const Blogs = () => {
                         <p><h5>Ans:</h5>
 
                             <div>
-                                Actually Firebase is a backend provided by Google for both application development and web development, which is the free and requires Internet.Firebase is a general purpose very easy to use api,authentication and others and so are use the features. Very easy to use but not too rich of functionality like as authentication. Other option implement authentication is that react hooks firebase authentication .
+                                Actually Firebase is a backend provided by Google for both application development,App development and web development, which is the free and requires Internet.Firebase is a general purpose very easy to use api,authentication and others and so are use the features. Very easy to use but not too rich of functionality like as authentication. Other option implement authentication is that react hooks firebase authentication.I like this authentication easy to use it.
                             </div>
                         </p>
                     </div>
@@ -49,7 +49,7 @@ const Blogs = () => {
                         <p><h5>Ans:</h5>
 
                             <div>
-                                There are many services which Firebase provides other than authentication like as Cloud Firestore,Cloud Functions,Hosting,Cloud Storage,Google Analytics,Predictions,Cloud Messaging,Security Rules,Firestore,Cloud Functions,Emulator Suite,Realtime Database,Dynamic Links etc.
+                                Firebase Authentication provides web backend services with others.Easy to use this firebase authentication services.Firebase Authentication integrates tightly with other Firebase services.There are many services which Firebase provides other than authentication like as Cloud Firestore,Cloud Functions,Hosting,Cloud Storage,Google Analytics,Predictions,Cloud Messaging,Security Rules,Firestore,Cloud Functions,Emulator Suite,Realtime Database,Dynamic Links etc
                             </div>
                         </p>
                     </div>
