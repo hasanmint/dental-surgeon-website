@@ -1,48 +1,34 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import slider1 from '../../images/banner/slider1.jpg';
-import slider2 from '../../images/banner/slider2.jpg';
-import slider3 from '../../images/banner/slider3.jpg';
+import banner from '../../images/banner/banner.jpg';
+
 
 const Banner = () => {
     return (
-        <div className='mb-5'>
-            <Carousel>
-                <Carousel.Item interval={1000}>
-                    <img
-                        className="d-block w-100 h-100"
-                        src={slider1}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={500}>
-                    <img
-                        className="d-block w-100"
-                        src={slider2}
-                        alt="Second slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={slider3}
-                        alt="Third slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+        <><div className="container-fluid bg-body">
+            <div class=" col-xxl-8 sm-gy-3">
+                <div class="row flex-lg-row-reverse align-items-center  py-1 mb-5">
+                    <div class=" col-sm-12 col-lg-6 shadow-sm p-3 mb-5 bg-body rounded">
+                        <img src={banner} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="600" height="450" loading="lazy" />
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 className="">Welcome to my Dental Surgeon</h3>
+                        <h1 class="display-5 fw-bold lh-1  mb-3">Meet <span className='text-info'>Dr. Jeremy Hill</span></h1>
+                        <p>Dentist Dr. Jeremy Hill is the
+                            Cosmetic dentistry (aesthetic dentistry), Veneers, Complex restorative dentistry, Smile design, Lumineers, Digital dentistry
+
+                            Cosmetic dentistry (aesthetic dentistry), Veneers, Complex restorative dentistry, Smile design, Lumineers, Digital dentist</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-info px-4 me-md-2">learn More</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+        </>
     );
 };
 

@@ -10,19 +10,21 @@ const Service = ({ service }) => {
     }
     return (
         <>
-            <Col>
-                <Card>
-                    <Card.Img variant="top" src={img} />
-                    <Card.Body>
-                        <Card.Title>{name}</Card.Title>
-                        <Card.Title>${price}</Card.Title>
-                        <Card.Text>
-                            {description}
-                        </Card.Text>
-                        <Button onClick={() => ServiceDetailBtn(id, name, img, description, price)} variant="info">Learn More</Button>
-                    </Card.Body>
-                </Card>
-            </Col>
+            <div>
+                <Col>
+                    <Card>
+                        <Card.Img variant="top" src={img} />
+                        <Card.Body>
+                            <Card.Title>{name}</Card.Title>
+                            <Card.Title>${price}</Card.Title>
+                            <Card.Text>
+                                {description}
+                            </Card.Text>
+                            <Button onClick={() => ServiceDetailBtn(id, name, img, description, price)} variant="info">Learn More</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </div>
         </>
 
     );
