@@ -1,11 +1,16 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Navigate, useLocation } from 'react-router-dom';
+import auth from '../../firebase.init';
 
-const RequireAuth = ({children}) => {
-    return (
-        <div>
-            <h2 className='display-5 text-center'>Check Out Page</h2>
-        </div>
-    );
+const RequireAuth = ({ children }) => {
+    const [user] = useAuthState(auth);
+    console.log('Require Auth:',user)
+    const location = useLocation();
+    if (!user) {
+        return <Navigate to="/login" state={{ from: location }} replace />;
+    }
+    return children;
 };
 
 export default RequireAuth;

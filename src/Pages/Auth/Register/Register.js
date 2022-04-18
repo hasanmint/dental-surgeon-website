@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const Register = () => {
@@ -12,6 +13,7 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
 
+    
     const navigate = useNavigate();
 
     const handleNevigateLogin = () => {
@@ -19,7 +21,7 @@ const Register = () => {
     }
 
     if (user) {
-        navigate('/login');
+        navigate('/services');
     }
 
     const handleRegister = (event) => {
@@ -56,6 +58,8 @@ const Register = () => {
                     <div className='text-dark text-end fw-bolder mt-2'>
                         <p> New Here? <Link to='/' className='text-success text-decoration-none fw-bold'>Forgot Password </Link></p>
                     </div>
+
+                    <SocialLogin></SocialLogin>
                 </div>
             </div>
 

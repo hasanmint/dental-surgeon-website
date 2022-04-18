@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     const navigate = useNavigate();
+    let emailError;
     const [
         signInWithEmailAndPassword,
         user,
@@ -13,7 +17,15 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     if (user) {
-        navigate('/register')
+        navigate(from, { replace: true });
+    }
+
+    if (error) {
+
+        emailError = <div>
+            <p className='text-danger'>Error: {error.message}</p>
+        </div>
+
     }
 
     const handleLogin = (event) => {
@@ -21,7 +33,7 @@ const Login = () => {
         const email = event.target.email.value;
         const password = event.target.password.value;
         // console.log(email, password);
-        signInWithEmailAndPassword(email, password)
+        signInWithEmailAndPassword(email, password);
     }
 
 
@@ -42,10 +54,13 @@ const Login = () => {
                             <input type="password" className='form-control' name="password" id="" placeholder='Enter Password' />
                         </div>
                         <button type="submit" className="btn btn-info w-100 fw-bold">Login</button>
+
                     </form>
+                    <p className='mt-3 text-center'>{emailError}</p>
                     <div className='text-dark text-end fw-bolder mt-2'>
                         <p> New Here? <Link to='/' className='text-success text-decoration-none fw-bold'>Forgot Password </Link></p>
                     </div>
+                    <SocialLogin></SocialLogin>
                 </div>
             </div>
 
