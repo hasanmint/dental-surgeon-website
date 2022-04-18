@@ -6,9 +6,9 @@ const Blogs = () => {
             <div className="row">
                 <div className="col-md-8 offset-md-2">
                     <h2 className='display-5 fw-bold lh-1 mb-5 mt-5 text-info text-center'>My Blogs</h2>
-                    <h2 className='display-4 text-center'>Question With Answer</h2>
+                    <h2 className='display-5 text-center'>Question With Answer</h2>
                     <div className='question'>
-                        <h4>Q:1 What is th difference between authorization and authentication ?</h4>
+                        <h5>Q:1 What is th difference between authorization and authentication ?</h5>
                         <p><h5>Ans:</h5>
 
                             <div>
@@ -35,18 +35,20 @@ const Blogs = () => {
                         </p>
                     </div>
                     <div className='question'>
-                        <h4>Q:2 Why are you using firebase? What other options do you have to implement authentication?</h4>
+                        <h5>Q:2 Why are you using firebase? What other options do you have to implement authentication?</h5>
                         <p><h5>Ans:</h5>
 
                             <div>
-                                Actually Firebase is a backend provided by Google for both application development,App development and web development, which is the free and requires Internet.Firebase is a general purpose very easy to use api,authentication and others and so are use the features. Very easy to use but not too rich of functionality like as authentication. Other option implement authentication is that react hooks firebase authentication.I like this authentication easy to use it.
+                                <p className="text-justify">
+                                    Actually Firebase is a backend provided by Google for both application development,App development and web development, which is the free and requires Internet.Firebase is a general purpose very easy to use api,authentication and others and so are use the features. Very easy to use but not too rich of functionality like as authentication. Other option implement authentication is that react hooks firebase authentication.I like this authentication easy to use it.
+                                </p>
                             </div>
                         </p>
                     </div>
 
                     <div className='question'>
-                        <h4>Q:3 What other services does firebase provide other than authentication?</h4>
-                        <p><h5>Ans:</h5>
+                        <h5>Q:3 What other services does firebase provide other than authentication?</h5>
+                        <p className='text-justify'><h5>Ans:</h5>
 
                             <div>
                                 Firebase Authentication provides web backend services with others.Easy to use this firebase authentication services.Firebase Authentication integrates tightly with other Firebase services.There are many services which Firebase provides other than authentication like as Cloud Firestore,Cloud Functions,Hosting,Cloud Storage,Google Analytics,Predictions,Cloud Messaging,Security Rules,Firestore,Cloud Functions,Emulator Suite,Realtime Database,Dynamic Links etc

@@ -10,7 +10,7 @@ const Service = ({ service }) => {
     }
     return (
         <>
-            <div>
+            <div className='sadow'>
                 <Col>
                     <Card>
                         <Card.Img variant="top" src={img} />

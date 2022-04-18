@@ -14,8 +14,13 @@ const ResetPassword = () => {
     const handleResetBtn = async (event) => {
         event.preventDefault();
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        toast('Sent email');
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else {
+            toast('Please Enter your Email Address');
+        }
     }
     return (
         <div className='container'>
@@ -25,7 +30,7 @@ const ResetPassword = () => {
                     <form onSubmit={handleResetBtn}>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                            <input ref={emailRef} type="email" name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                            <input ref={emailRef} type="email" name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                         </div>
                         <button type="submit" className="btn btn-info w-100">Submit</button>
                     </form>
