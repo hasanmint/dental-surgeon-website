@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
-import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
-import Loading from '../../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const location = useLocation();
@@ -18,24 +15,13 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-    const [sendPasswordResetEmail, sending, sendError] = useSendPasswordResetEmail(
-        auth
-    );
 
-    if (loading || sending) {
-        return <Loading></Loading>
-    }
+
 
     if (user) {
         navigate(from, { replace: true });
     }
 
-    const resetPassword = async (event) => {
-        const email = event.target.email.value;
-        console.log(email);
-        await sendPasswordResetEmail(email);
-        toast('Sent email');
-    }
 
 
     if (error) {
@@ -76,10 +62,10 @@ const Login = () => {
                     </form>
                     <p className='mt-3 text-center'>{emailError}</p>
                     <div className='text-dark text-end fw-bolder mt-2'>
-                        <p> New Here? <button onClick={resetPassword} className='text-success text-decoration-none fw-bold' type='submit'>Forgot Password </button></p>
+                        <p> Change New? <Link to='/resetpassword' className='text-success text-decoration-none fw-bold'>Reset Password </Link></p>
                     </div>
                     <SocialLogin></SocialLogin>
-                    <ToastContainer />
+
                 </div>
             </div>
 
