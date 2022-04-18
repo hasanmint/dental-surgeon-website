@@ -57,7 +57,7 @@ const Login = () => {
                         <div className="form-group mb-3">
                             <input type="password" className='form-control' name="password" id="" placeholder='Enter Password' required />
                         </div>
-                        <button type="submit" className="btn btn-info w-100 fw-bold">Login</button>
+                        <button type="submit" className="btn btn-info w-100 p-2 fw-bold">Login</button>
 
                     </form>
                     <p className='mt-3 text-center'>{emailError}</p>

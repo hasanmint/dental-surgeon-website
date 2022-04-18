@@ -54,7 +54,7 @@ const Register = () => {
                         <div className="form-group mb-3">
                             <input type="password" className='form-control' name="password" id="" placeholder='Enter Password' required />
                         </div>
-                        <button type="submit" className="btn btn-info w-100 fw-bold">Register</button>
+                        <button type="submit" className="btn btn-info w-100 fw-bold p-2">Register</button>
                     </form>
                     <div className='text-dark text-end fw-bolder mt-2'>
                         <p> New Here? <Link to='/resetpassword' className='text-success text-decoration-none fw-bold'>Reset Password </Link></p>
