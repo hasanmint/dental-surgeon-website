@@ -40,7 +40,7 @@ const Blogs = () => {
 
                             <div>
                                 <p className="text-justify">
-                                    Actually Firebase is a backend provided by Google for both application development,App development and web development, which is the free and requires Internet.Firebase is a general purpose very easy to use api,authentication and others and so are use the features. Very easy to use but not too rich of functionality like as authentication. Other option implement authentication is that react hooks firebase authentication.I like this authentication easy to use it.
+                                    Actually Firebase is a backend provided by Google for both application development,App development and web development, which is the free and requires Internet. Firebase is a general purpose very easy to use api, authentication and others and so are use the features. Very easy to use but not too rich of functionality like as authentication. Other option implement authentication is that react hooks firebase authentication. I like this authentication easy to use it.
                                 </p>
                             </div>
                         </p>

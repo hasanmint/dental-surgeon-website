@@ -15,9 +15,9 @@ const ServiceDetail = () => {
                     </div>
                     <div className="col-md-6">
                         <h1>Service Details :{serviceId}</h1>
-                        <h2>General Dental Care</h2>
-                        <h3>$7000</h3>
-                        <p>This dental service includes routine dental examinations or check-ups & oral health advice.</p>
+                        <h2>Dental Filling</h2>
+                        <h3>$250</h3>
+                        <p>This Dental Filling includes routine dental examinations or check-ups & oral health advice.</p>
                         <Link to="/checkout" >
                             <p className='btn btn-info text-light fw-bold'>CheckOut</p>
                         </Link>

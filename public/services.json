@@ -8,17 +8,18 @@
     },
     {
         "id": 2,
-        "name": "General Dental Care",
+        "name": "Dental Filling",
         "price": "200",
-        "description": "This dental service includes routine dental examinations or check-ups & oral health advice.",
-        "img": "https://images.pexels.com/photos/3779706/pexels-photo-3779706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "description": "This Dental Filling service includes routine dental examinations or check-ups & oral health advice.",
+        "img": "https://images.pexels.com/photos/305567/pexels-photo-305567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "id": 3,
         "name": "Teeth Whitening",
         "price": "250",
         "description": "Teeth bleaching & teeth whitening are fast, easy ways to brighten teeth and enhance your smile.",
-        "img": "https://images.pexels.com/photos/305567/pexels-photo-305567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "img": "https://images.pexels.com/photos/3779706/pexels-photo-3779706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        
     }
    
     

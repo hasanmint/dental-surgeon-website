@@ -1,7 +1,6 @@
 import React from 'react';
 import google from '../../../images/social/google-icon.svg';
 import facebook from '../../../images/social/facebook-icon.svg';
-import github from '../../../images/social/github.png';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { useNavigate } from 'react-router-dom';
@@ -40,11 +39,6 @@ const SocialLogin = () => {
                     Facebook SignIn</div>
             </div>
 
-            <div className='mt-2'>
-                <div className="btn btn-secondary w-100">
-                    <img src={github} alt="facebook" width={30} height={30} />
-                    Facebook SignIn</div>
-            </div>
         </>
     );
 };
