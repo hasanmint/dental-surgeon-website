@@ -1,13 +1,12 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import notfound from '../../images/404page.png';
 
 const NotFound = () => {
     return (
         <div className='container'>
-            <div className="row my-5">
-                <div className="col-md-6 text-center mt-200">
+            <div className="row text-center mt-5 mb-5">
+                <div className="col-md-6 text-center">
                     <h2 className="text-center">Error 404</h2>
                     <h4 className="text-center"> Oops! The page you're looking for isn't here.</h4>
                     <Link to="/" >

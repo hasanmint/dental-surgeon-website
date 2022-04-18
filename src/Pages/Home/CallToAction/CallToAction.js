@@ -11,9 +11,9 @@ const CallToAction = () => {
 
                     <p class="lead text-info fw-bold">+800 4759 1232</p>
 
-                    <p class="lead">
-                        <Link to='/'>
-                            <p><button className="btn-info">Requect A Callback</button></p>
+                    <p>
+                        <Link to="/" >
+                            <p className='btn btn-info text-light fw-bold'>Requect A Callback</p>
                         </Link>
                     </p>
                 </div>
