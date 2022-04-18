@@ -65,11 +65,11 @@ const Login = () => {
                     </div>
                     <form onSubmit={handleLogin}>
                         <div className="form-group mb-3">
-                            <input type="email" className='form-control' name="email" id="" placeholder='Enter Email' />
+                            <input type="email" className='form-control' name="email" id="" placeholder='Enter Email' required />
                         </div>
 
                         <div className="form-group mb-3">
-                            <input type="password" className='form-control' name="password" id="" placeholder='Enter Password' />
+                            <input type="password" className='form-control' name="password" id="" placeholder='Enter Password' required />
                         </div>
                         <button type="submit" className="btn btn-info w-100 fw-bold">Login</button>
 

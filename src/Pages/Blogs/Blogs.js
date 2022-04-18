@@ -5,6 +5,7 @@ const Blogs = () => {
         <div className='container'>
             <div className="row">
                 <div className="col-md-8 offset-md-2">
+                    <h2 className='display-5 fw-bold lh-1 mb-5 mt-5 text-info text-center'>My Blogs</h2>
                     <h2 className='display-4 text-center'>Question With Answer</h2>
                     <div className='question'>
                         <h4>Q:1 What is th difference between authorization and authentication ?</h4>
